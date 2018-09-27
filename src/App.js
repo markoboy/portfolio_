@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Switch, Route, Link } from 'react-router-dom';
+import Header from './components/Header';
+import Footer from './components/Footer';
 import HomePage from './components/HomePage';
 import NotFound from './components/NotFound';
 import Test from './components/Test';
@@ -8,6 +10,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Header />
         <Switch>
           <Route exact path="/" component={HomePage} />
 
@@ -16,6 +19,7 @@ class App extends Component {
 
           <Route component={NotFound} />
         </Switch>
+        <Footer />
       </div>
     );
   }
