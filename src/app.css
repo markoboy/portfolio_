@@ -1,0 +1,27 @@
+/** ==============================
+ *  General tags styles.
+ *  =============================*/
+html, body, #root, .App {
+	height: 100%;
+}
+
+html, body, ul, h1, h2, h3, h4, p {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font: 1.15em/1.25 Helvetica, Arial, sans; /* TODO: Find nice fonts on google fonts */
+	color: #333;
+	overflow-x: hidden;
+}
+
+.App {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+
+ul {
+	list-style: none;
+}

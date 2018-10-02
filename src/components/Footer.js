@@ -1,4 +1,5 @@
 import React from 'react';
+import './footer.css';
 
 const Footer = () => {
 	// Get the current year to set up the copyright after 2018.

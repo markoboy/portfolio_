@@ -1,0 +1,7 @@
+/** ==============================
+ *  Main container styles.
+ *  =============================*/
+.main_container {
+	flex-grow: 1;
+	border: 1px solid red;
+}
