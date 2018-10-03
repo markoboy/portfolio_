@@ -3,5 +3,92 @@
  *  =============================*/
 .header {
 	flex-shrink: 0;
-	border: 1px solid green;
+	height: 80px;
+	background: linear-gradient(90deg, rgb(0, 153, 204) 5%, rgb(0, 172, 230) 15%, rgb(0, 191, 255) 80%, rgb(0, 172, 230) 90%, rgb(0, 153, 204) 98%);
+	box-shadow: 0 1px 20px 1px rgb(0, 172, 230);
+	color: white;
+}
+
+.header_container {
+	height: 100%;
+	max-width: 980px;
+	margin: 0 auto;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* Heading styles */
+.header_heading {
+	margin-left: 1em;
+}
+
+.header_heading p {
+	font-size: 0.95em;
+	margin-bottom: 0.5em;
+}
+
+/* Navigation styles */
+.navlink_container {
+	margin-right: 1em;
+	align-self: flex-end;
+}
+
+.navlink_list {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.navlink_item {
+	text-align: center;
+}
+
+.navlink_item a {
+	color: white;
+	display: block;
+	padding: 0.4em 0.3em;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 1.1em;
+	letter-spacing: 0.2px;
+	transition: background-color 0.25s linear;
+	border-radius: 12px 12px 0 0;
+
+	position: relative; /* For nice smooth bottom border animation */
+}
+
+.navlink_item a:hover, .navlink_item a:focus, .navlink_item .active {
+	background-color: rgba(0, 0, 0, 0.07);
+}
+
+/* Add a bottom border */
+.navlink_item a::after {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	border-bottom: 2px solid white;
+	transform: scaleX(0);
+	transition: transform 0.25s linear;
+}
+
+/* Increase the scale of its width to 100% for the animation to occur on hover and focus */
+.navlink_item a:hover::after, .navlink_item a:focus::after {
+	transform: scaleX(1);
+}
+
+/* Add an arrow to the bottom of the active navlink */
+.navlink_item .active::after {
+	width: 0;
+	transform: scaleX(1);
+	transition: width 0.25s linear, left 0.25s linear, border 0.15s linear;
+
+	content: ' ';
+	position: absolute;
+	left: 43%;
+	border: 6px solid;
+	border-color: transparent transparent white transparent;
 }
