@@ -8,7 +8,7 @@ import './main.css';
 class MainContainer extends Component {
 	render() {
 		return (
-			<main className="main_container">
+			<main className="main">
 				<Switch>
 					<Route exact path="/" component={HomePage} />
 

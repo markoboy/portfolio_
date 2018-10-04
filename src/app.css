@@ -25,3 +25,20 @@ body {
 ul {
 	list-style: none;
 }
+
+/* Add a bottom border on links as pseudo element
+   so that it doesnt change the elements size */
+a::after {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	transform: scaleX(0);
+	transition: transform 0.25s linear;
+}
+
+a:hover::after, a:focus::after {
+	transform: scaleX(1);
+}

@@ -1,7 +1,22 @@
 /** ==============================
  *  Main container styles.
  *  =============================*/
-.main_container {
+.main {
 	flex-grow: 1;
 	border: 1px solid red;
+}
+
+.main a {
+	position: relative;
+	text-decoration: none;
+	color: #006080;
+	transition: color 0.25s linear;
+}
+
+.main a:hover, .main a:focus {
+	color: #0099cc;
+}
+
+.main a::after {
+	border-bottom: 1px solid #0099cc;
 }
