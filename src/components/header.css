@@ -7,6 +7,7 @@
 	background: linear-gradient(90deg, rgb(0, 153, 204) 5%, rgb(0, 172, 230) 15%, rgb(0, 191, 255) 80%, rgb(0, 172, 230) 90%, rgb(0, 153, 204) 98%);
 	box-shadow: 0 1px 20px 1px rgb(0, 172, 230);
 	color: white;
+	z-index: 10; /* Stay on top of other elements */
 }
 
 .header_container {
