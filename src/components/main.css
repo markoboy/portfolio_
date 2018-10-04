@@ -3,7 +3,13 @@
  *  =============================*/
 .main {
 	flex-grow: 1;
-	border: 1px solid red;
+	padding: 1em;
+	background: linear-gradient(90deg, rgb(230, 230, 230) 5%, rgb(242, 242, 242) 10%, rgb(255, 255, 255) 55%, rgb(242, 242, 242) 95%, rgb(230, 230, 230) 100%);
+}
+
+.main_container {
+	max-width: 980px;
+	margin: 0 auto;
 }
 
 .main a {
