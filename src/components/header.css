@@ -62,22 +62,9 @@
 	background-color: rgba(0, 0, 0, 0.07);
 }
 
-/* Add a bottom border */
+/* Add the bottom border color */
 .navlink_item a::after {
-	content: '';
-	display: block;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
 	border-bottom: 2px solid white;
-	transform: scaleX(0);
-	transition: transform 0.25s linear;
-}
-
-/* Increase the scale of its width to 100% for the animation to occur on hover and focus */
-.navlink_item a:hover::after, .navlink_item a:focus::after {
-	transform: scaleX(1);
 }
 
 /* Add an arrow to the bottom of the active navlink */
