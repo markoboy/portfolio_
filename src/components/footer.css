@@ -2,6 +2,71 @@
  *  Footer styles.
  *  =============================*/
 .footer {
+	padding: 0.5em;
+	font-size: 0.9em;
+	color: white;
+	background: linear-gradient(90deg, rgb(89, 89, 89), rgb(102, 102, 102) 10%, rgb(115, 115, 115), rgb(102, 102, 102) 90%, rgb(89, 89, 89));
+	box-shadow: 0 -1px 16px 1px grey;
 	flex-shrink: 0;
-	border: 1px solid blue;
+
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer > * {
+	margin: 0 0.5em;
+}
+
+.footer_copy a {
+	position: relative;
+	color: black;
+	text-decoration: none;
+	transition: color 0.25s linear;
+}
+
+.footer_copy a:hover, .footer_copy a:focus {
+	color: white;
+}
+
+.footer_copy a::after {
+	border-bottom: 1px solid white;
+}
+
+.footer_social {
+	text-align: center;
+}
+
+.social_list {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+	padding: 0.4em 0 0.1em;
+}
+
+.social_list a {
+	border-radius: 50%;
+	padding: 0.2em 0.3em;
+	color: white;
+	font-size: 1.5em;
+	transition: color 0.25s linear, background-color 0.25s linear, text-shadow 0.25s linear;
+}
+
+.social_list a:hover, .social_list a:focus {
+	background-color: white;
+	text-shadow: 4px 4px 10px grey;
+}
+
+.social_list a[href*="linkedin"]:hover, .social_list a[href*="linkedin"]:focus {
+	color: #0077B5;
+}
+
+.social_list a[href*="github"]:hover, .social_list a[href*="github"]:focus {
+	color: #000;
+}
+
+.social_list a[href*="freecodecamp"]:hover, .social_list a[href*="freecodecamp"]:focus {
+	color: #006400;
 }
