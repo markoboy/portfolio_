@@ -9,16 +9,14 @@ class MainContainer extends Component {
 	render() {
 		return (
 			<div className="main">
-				<main className="main_container">
-					<Switch>
-						<Route exact path="/" component={HomePage} />
+				<Switch>
+					<Route exact path="/" component={HomePage} />
 
-						<Route exact path="/test" component={Test} />
-						<Route exact path="/test/:id" component={Test} />
+					<Route exact path="/test" component={Test} />
+					<Route exact path="/test/:id" component={Test} />
 
-						<Route component={NotFound} />
-					</Switch>
-				</main>
+					<Route component={NotFound} />
+				</Switch>
 			</div>
 		);
 	}
