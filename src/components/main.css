@@ -75,5 +75,12 @@
 	background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5) 10%, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5) 90%, rgba(255, 255, 255, 0.2) 100%);
 	border: 1px solid deepskyblue;
 	border-color: transparent lightyellow lightyellow transparent;
-	box-shadow: 4px 4px 15px 1px lightblue;
+	box-shadow: 2px 2px 15px 1px lightblue;
+	animation: rotateEl 4s linear 0s infinite normal;
+}
+
+@keyframes rotateEl {
+	0%   { transform: rotate(0deg); box-shadow: 2px 2px 15px 1px lightblue; }
+	50%  { box-shadow: 2px 2px 15px 1px yellow; }
+	100% { transform: rotate(360deg); box-shadow: 2px 2px 15px 1px lightblue; }
 }
