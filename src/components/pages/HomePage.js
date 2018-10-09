@@ -11,14 +11,8 @@ class HomePage extends Component {
 			<main className="main_container">
 				<section className="home_top">
 					<div className="home_top_container">
-						<div className="home_top_content" style={{ 'alignSelf': 'flex-start'}}>
-							<p>Welcome to my personal webpage. My name is Athanasios and I am currently living in the city of Newcastle.</p>
-						</div>
 						<div className="home_top_content">
-							<p>At the moment, I am working as a Chef Assistant, but I am very passionate with coding and web development.</p>
-						</div>
-						<div className="home_top_content" style={{ 'alignSelf': 'flex-end'}}>
-							<p>Furthermore, I have recently received a certifacte from Udacity as a Front-End Web Developer. Feel free to explore this site and ask me anything from the contact form.</p>
+							<p>Welcome to my personal webpage. My name is Athanasios and I am currently living in the city of Newcastle. I have recently received a certificate from Udacity as a Front-End Web Developer and I am in search for new opportunities.</p>
 						</div>
 						<div className="home_top_bullets">
 							<div className="home_top_bullet"></div>

@@ -30,20 +30,25 @@
 	min-height: 50vh;
 	border-bottom: 1px solid grey;
 	box-shadow: 1px 2px 10px 1px grey;
+
+	display: flex;
+	flex-flow: column nowrap;
 }
 
 .home_top_container {
+	flex-grow: 1;
+	max-width: 980px;
+	margin: 0 auto;
+	position: relative;
+
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;
-	max-width: 980px;
-	margin: 0 auto;
+	justify-content: center;
 }
 
 .home_top_content {
-	margin: 1em 1em 0;
-	padding: 1em 0;
-	max-width: 40vw;
+	margin: 1em 1em 4em; /* 4em at the bottom for the bullets space */
 	background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5) 10%, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5) 90%, rgba(255, 255, 255, 0.2) 100%);
 	border-radius: 26px;
 	color: black;
@@ -54,15 +59,13 @@
 
 .home_top_content > * {
 	/* Let 1em margin space to all home_top_content children */
-	margin: 0 1em;
-}
-
-.home_top_content:last-child {
-	margin-bottom: 1em;
+	margin: 1em;
 }
 
 /* Create some visual bullets on the bottom of the top background */
 .home_top_bullets {
+	position: absolute;
+	bottom: 0;
 	display: flex;
 	flex-flow: row nowrap;
 	align-items: center;
@@ -76,11 +79,4 @@
 	border: 1px solid deepskyblue;
 	border-color: transparent lightyellow lightyellow transparent;
 	box-shadow: 2px 2px 15px 1px lightblue;
-	animation: rotateEl 4s linear 0s infinite normal;
-}
-
-@keyframes rotateEl {
-	0%   { transform: rotate(0deg); box-shadow: 2px 2px 15px 1px lightblue; }
-	50%  { box-shadow: 2px 2px 15px 1px yellow; }
-	100% { transform: rotate(360deg); box-shadow: 2px 2px 15px 1px lightblue; }
 }
