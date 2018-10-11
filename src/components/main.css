@@ -80,3 +80,37 @@
 	border-color: transparent lightyellow lightyellow transparent;
 	box-shadow: 2px 2px 15px 1px lightblue;
 }
+
+/* Home page bottom styles */
+.home_bottom {
+	max-width: 980px;
+	position: relative;
+	margin: 0 auto;
+}
+
+/* Create Zig-Zag borders on the sides. */
+.home_bottom:before {
+	background: linear-gradient(-225deg, rgba(0, 0, 0, 0.05) 16px, transparent 0), linear-gradient(45deg, rgba(0, 0, 0, 0.05) 16px, transparent 0);
+	left: 0;
+}
+
+.home_bottom::after {
+	background: linear-gradient(-45deg, rgba(0, 0, 0, 0.05) 16px, transparent 0), linear-gradient(225deg, rgba(0, 0, 0, 0.05) 16px, transparent 0);
+	right: 0;
+}
+
+.home_bottom::after, .home_bottom::before {
+	background-repeat: repeat-y;
+	background-position: left top;
+	background-size: 32px 32px;
+	content: " ";
+	display: block;
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 32px;
+}
+
+.home_bottom_container {
+	padding: 1em 28px;
+}
