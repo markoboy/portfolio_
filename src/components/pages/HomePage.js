@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class HomePage extends Component {
 	constructor() {
@@ -49,17 +50,17 @@ class HomePage extends Component {
 					<div className="home_bottom_container">
 						<div className="home_bottom_content">
 							<h3 className="heading">Check out my Portfolio</h3>
-							<p className="icon"><i className="fas fa-project-diagram"></i></p>
+							<p className="icon"><FontAwesomeIcon icon="project-diagram" /></p>
 							<p className="description">Head over the <Link to="/portfolio">portfolio page</Link> to view all of the projects I have done utilizing my Front-End developer skills. There are not many at the moment, but as I am getting more experience you will see some beautiful projects there!</p>
 						</div>
 						<div className="home_bottom_content">
 							<h3 className="heading">View my Resume</h3>
 							<p className="description">If you are interested in hiring an entry-level passionate Front-End web developer, checkout my <Link to="/profile">resume page</Link> and I will be glad to speak with you.</p>
-							<p className="icon"><i className="far fa-id-card"></i></p>
+							<p className="icon"><FontAwesomeIcon icon="id-card" /></p>
 						</div>
 						<div className="home_bottom_content">
 							<h3 className="heading">Got questions?</h3>
-							<p className="icon"><i className="fas fa-question"></i></p>
+							<p className="icon"><FontAwesomeIcon icon="question" /></p>
 							<p className="description">Then, you can find out more about this webpage and me at the <Link to="/about">about page</Link>. If you cant find your question over there or you want to get in touch with me, head over the <Link to="/contact">contact page</Link>.</p>
 						</div>
 					</div>
