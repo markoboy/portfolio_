@@ -2,12 +2,12 @@ import React from 'react';
 import './footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const Footer = () => {
+const Footer = ({ closeMenu }) => {
 	// Get the current year to set up the copyright after 2018.
 	let dt = new Date(),
 		year = dt.getFullYear();
 	return (
-		<footer className="footer">
+		<footer className="footer" onClick={() => closeMenu()}>
 			<div className="footer_copy">
 				<p>Copyright &copy; 2018 {year !== 2018 && ('- ' + year)} - Athanasios Markou. All rights reserved.</p>
 				<p>Powered by <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub pages</a>.</p>

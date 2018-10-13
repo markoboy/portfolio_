@@ -8,7 +8,7 @@ import './main.css';
 class MainContainer extends Component {
 	render() {
 		return (
-			<div className="main">
+			<div className="main" onClick={() => this.props.closeMenu()}>
 				<Switch>
 					<Route exact path="/" component={HomePage} />
 

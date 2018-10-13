@@ -59,7 +59,7 @@
 	position: relative; /* For nice smooth bottom border animation */
 }
 
-.navlink_item a:hover, .navlink_item a:focus, .navlink_item .active {
+.navlink_item a:hover, .navlink_item a:focus, .navlink_item .active, .hamburger_button:hover, .hamburger_button:focus {
 	background-color: rgba(0, 0, 0, 0.07);
 }
 
@@ -79,4 +79,20 @@
 	left: 43%;
 	border: 6px solid;
 	border-color: transparent transparent white transparent;
+}
+
+.hamburger_container {
+	align-self: flex-end;
+	margin-right: 1em;
+}
+
+.hamburger_button {
+	padding: 0.25em;
+	font-size: 1.5em;
+	color: white;
+	border: none;
+	cursor: pointer;
+	background: inherit;
+	transition: background-color 0.25s linear;
+	border-radius: 12px 12px 0 0;
 }

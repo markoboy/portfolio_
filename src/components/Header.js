@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import './header.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class Header extends Component {
 	render() {
+		const { toggleMenu, closeMenu, menuOpened } = this.props;
+
 		return (
-			<header className="header">
+			<header className="header" onClick={() => closeMenu()}>
 				<div className="header_container">
 					<div className="header_heading">
 						<h1>Athanasios Markou</h1>
@@ -20,6 +23,12 @@ class Header extends Component {
 							<li className="navlink_item"><NavLink to="/about">About</NavLink></li>
 						</ul>
 					</nav>
+					<div className="hamburger_container">
+						<button
+							className="hamburger_button"
+							onClick={() => toggleMenu()}
+							>Menu {menuOpened ? <FontAwesomeIcon icon="chevron-circle-down" /> : <FontAwesomeIcon icon="bars" />}</button>
+					</div>
 				</div>
 			</header>
 		);
