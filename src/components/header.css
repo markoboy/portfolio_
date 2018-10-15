@@ -113,14 +113,14 @@
 		z-index: 1;
 		visibility: hidden;
 		opacity: 0;
-		transform: translate(0, 41px) scaleY(0);
+		transform: translate(0, 100%) scaleY(0);
 		transition: opacity 0.2s linear, visibility 0.2s linear, transform 0.2s linear;
 	}
 
 	.navlink_container.open {
 		visibility: visible;
 		opacity: 1;
-		transform: translate(0, 41px) scaleY(1);
+		transform: translate(0, 100%) scaleY(1);
 	}
 
 	.navlink_list {
