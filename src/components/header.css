@@ -132,3 +132,42 @@
 		display: block; /* Display the hamburger button */
 	}
 }
+
+/* Small screen styles */
+@media screen and (max-width: 550px) {
+	.header_container {
+		font-size: 0.9em;
+	}
+
+	.header_heading p {
+		display: none; /* Hide the job title */
+	}
+
+	.navlink_container {
+		max-height: 0;
+		transform: translate(0, 100%);
+		transition: max-height 0.3s linear, opacity 0.2s linear, visibility 0.2s linear;
+	}
+
+	.navlink_container.open {
+		max-height: 400px;
+		transform: translate(0, 100%);
+	}
+
+	.navlink_list {
+		flex-flow: column nowrap;
+		margin: 0;
+	}
+
+	.navlink_item a::after{
+		width: 60%;
+		left: 20%;
+	}
+
+	/* Change the arrow of the active navlink to the left */
+	.navlink_item .active::after {
+		left: 20%;
+		bottom: 40%;
+		border-color: transparent transparent transparent white;
+	}
+}
