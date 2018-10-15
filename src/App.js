@@ -18,7 +18,9 @@ class App extends Component {
 		}
 	}
 
-	closeMenu = () => {
+	closeMenu = (target) => {
+		// Dont close the menu if the clicked target on header is a menu link
+		if (target && target.tagName === 'A') return;
 		if (this.state.menuOpened)
 			this.setState({ menuOpened: false });
 	};

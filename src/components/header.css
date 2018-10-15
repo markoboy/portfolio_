@@ -82,6 +82,7 @@
 }
 
 .hamburger_container {
+	display: none;
 	align-self: flex-end;
 	margin-right: 1em;
 }
@@ -95,4 +96,39 @@
 	background: inherit;
 	transition: background-color 0.25s linear;
 	border-radius: 12px 12px 0 0;
+	width: 4.3em;
+}
+
+/* Medium screen styles */
+@media screen and (max-width: 815px) {
+	.header_container {
+		position: relative;
+	}
+
+	.navlink_container {
+		position: absolute;
+		background: linear-gradient(90deg, rgb(89, 89, 89), rgb(102, 102, 102) 10%, rgb(115, 115, 115), rgb(102, 102, 102) 90%, rgb(89, 89, 89));
+		box-shadow: 0 4px 10px 1px grey;
+		width: 100%;
+		z-index: 1;
+		visibility: hidden;
+		opacity: 0;
+		transform: translate(0, 41px) scaleY(0);
+		transition: opacity 0.2s linear, visibility 0.2s linear, transform 0.2s linear;
+	}
+
+	.navlink_container.open {
+		visibility: visible;
+		opacity: 1;
+		transform: translate(0, 41px) scaleY(1);
+	}
+
+	.navlink_list {
+		justify-content: flex-end; /* Display the item on the right */
+		margin-right: 1em;
+	}
+
+	.hamburger_container {
+		display: block; /* Display the hamburger button */
+	}
 }
