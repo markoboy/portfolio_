@@ -8,12 +8,8 @@ const Footer = ({ closeMenu }) => {
 		year = dt.getFullYear();
 	return (
 		<footer className="footer" onClick={() => closeMenu()}>
-			<div className="footer_copy">
-				<p>Copyright &copy; 2018 {year !== 2018 && ('- ' + year)} - Athanasios Markou. All rights reserved.</p>
-				<p>Powered by <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub pages</a>.</p>
-			</div>
 			<div className="footer_social">
-				<h4>Get in touch:</h4>
+				<h4>Find me in:</h4>
 				<ul className="social_list">
 					<li>
 						<a href="https://linkedin.com/in/a-markou" title="LinkedIn" target="_blank" rel="noopener noreferrer">
@@ -31,6 +27,10 @@ const Footer = ({ closeMenu }) => {
 						</a>
 					</li>
 				</ul>
+			</div>
+			<div className="footer_copy">
+				<p>Copyright &copy; 2018 {year !== 2018 && ('- ' + year)} - Athanasios Markou. All rights reserved.</p>
+				<p>Powered by <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub pages</a>.</p>
 			</div>
 		</footer>
 	);

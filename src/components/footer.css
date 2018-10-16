@@ -19,6 +19,10 @@
 	margin: 0 0.5em;
 }
 
+.footer_copy {
+	order: -1;
+}
+
 .footer_copy a {
 	position: relative;
 	color: black;
@@ -40,7 +44,7 @@
 
 .social_list {
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: row nowrap;
 	justify-content: space-around;
 	align-items: center;
 	padding: 0.4em 0 0.1em;
@@ -69,4 +73,15 @@
 
 .social_list a[href*="freecodecamp"]:hover, .social_list a[href*="freecodecamp"]:focus {
 	color: #006400;
+}
+
+/* Small screen styles */
+@media screen and (max-width: 540px) {
+	.footer {
+		flex-flow: column nowrap;
+	}
+
+	.footer_copy {
+		order: 0;
+	}
 }
