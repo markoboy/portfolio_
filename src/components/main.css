@@ -146,3 +146,14 @@
 	width: calc(100% - 5.8em);
 	padding: 0 0.5em;
 }
+
+/* Small screens styles */
+@media screen and (max-width: 520px) {
+	.home_bottom_content .icon {
+		display: none;
+	}
+
+	.home_bottom_content .description {
+		width: 100%;
+	}
+}
