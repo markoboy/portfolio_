@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { getData } from './utils/DataAPI'
+import { getData, sortByDate } from './utils/DataAPI'
 import Header from './components/Header';
 import MainContainer from './components/MainContainer';
 import Footer from './components/Footer';
@@ -23,7 +23,9 @@ class App extends Component {
 	componentDidMount() {
 		/* Get the projects data. */
 		getData('projects')
-			.then( projects => this.setState({ projects }));
+			.then( projects => {
+				this.setState({ projects: sortByDate(projects, 'newest') });
+			});
 	}
 
 	closeMenu = (target) => {

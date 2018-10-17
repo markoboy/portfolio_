@@ -8,7 +8,7 @@
 			"The app runs successfully error-free and on all modern devices browsers."
 		],
 		"startDate": { "str": "10th of August, 2018", "num": 20180810 },
-		"endDate": { "str": "16th of August, 2018", "num": 20180816 }, // Set the num to big number so that it is shown first after sorting.
+		"endDate": { "str": "16th of August, 2018", "num": 20180816 },
 		"location": [
 			{ "title": "Github", "url": "https://github.com/markoboy/Newcastle-NeighboorhoodMap", "iconType": "url or fa", "icon": "github" },
 			{ "title": "Live page", "url": "https://markoboy.github.io/Newcastle-NeighboorhoodMap/", "iconType": "fa", "icon": "globe" }
