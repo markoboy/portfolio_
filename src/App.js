@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { getData } from './utils/DataAPI'
 import Header from './components/Header';
 import MainContainer from './components/MainContainer';
 import Footer from './components/Footer';
@@ -14,8 +15,15 @@ class App extends Component {
 	constructor() {
 		super();
 		this.state = {
-			menuOpened: false
+			menuOpened: false,
+			projects: ''
 		}
+	}
+
+	componentDidMount() {
+		/* Get the projects data. */
+		getData('projects')
+			.then( projects => this.setState({ projects }));
 	}
 
 	closeMenu = (target) => {

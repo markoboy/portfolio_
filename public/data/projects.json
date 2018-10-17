@@ -1,0 +1,42 @@
+[
+	{
+		"id": "neighborhood_map_react",
+		"title": "Neighborhood Map (ReactJS)",
+		"desc": "project_description",
+		"achievements": [
+			"Created a Progressive Web App with React including a11y features.",
+			"The app runs successfully error-free and on all modern devices browsers."
+		],
+		"startDate": { "str": "10th of August, 2018", "num": 20180810 },
+		"endDate": { "str": "16th of August, 2018", "num": 20180816 }, // Set the num to big number so that it is shown first after sorting.
+		"location": [
+			{ "title": "Github", "url": "https://github.com/markoboy/Newcastle-NeighboorhoodMap", "iconType": "url or fa", "icon": "github" },
+			{ "title": "Live page", "url": "https://markoboy.github.io/Newcastle-NeighboorhoodMap/", "iconType": "fa", "icon": "globe" }
+		],
+		"techUsed": [
+			{ "title": "HTML", "iconType": "url or fa", "icon": "html" },
+			{ "title": "React", "iconType": "url or fa", "icon": "react" }
+		],
+		"image": ""
+	},
+	{
+		"id": "restaurant_reviews_app",
+		"title": "Restaurant Reviews App",
+		"desc": "project_description",
+		"achievements": [
+			"Updated a static webpage to a responsive mobile-ready application.",
+			"Implemented an offline-first app with the use of Service Worker API."
+		],
+		"startDate": { "str": "7th of July, 2018", "num": 20180707 },
+		"endDate": { "str": "16th of July, 2018", "num": 20180716 },
+		"location": [
+			{ "title": "Github", "url": "https://github.com/markoboy/RestaurantReviewsApp", "iconType": "url or fa", "icon": "github" },
+			{ "title": "Live page", "url": "https://markoboy.github.io/RestaurantReviewsApp/", "iconType": "fa", "icon": "globe" }
+		],
+		"techUsed": [
+			{ "title": "HTML", "iconType": "url or fa", "icon": "html" },
+			{ "title": "JavaScript", "iconType": "url or fa", "icon": "javascript" }
+		],
+		"image": ""
+	}
+]
