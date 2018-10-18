@@ -16,7 +16,7 @@ class App extends Component {
 		super();
 		this.state = {
 			menuOpened: false,
-			projects: ''
+			projects: []
 		}
 	}
 
@@ -43,7 +43,9 @@ class App extends Component {
     return (
       <div className="App">
         <Header toggleMenu={this.toggleMenu} closeMenu={this.closeMenu} menuOpened={this.state.menuOpened} />
-        <MainContainer closeMenu={this.closeMenu} />
+        <MainContainer
+					closeMenu={this.closeMenu}
+					projects={this.state.projects} />
         <Footer closeMenu={this.closeMenu} />
       </div>
     );
