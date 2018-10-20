@@ -11,6 +11,10 @@ class PortfolioPage extends Component {
 		};
 	}
 
+	componentDidMount() {
+		document.title = 'Portfolio Page | Athanasios Markou';
+	}
+
 	render() {
 		return (
 			<div className="main_container">

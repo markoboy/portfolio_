@@ -7,7 +7,7 @@
  * @return {object} - A promise with the json response.
  */
 export const getData = file => (
-	fetch(`/data/${file}.json`)
+	fetch(`${process.env.PUBLIC_URL}/data/${file}.json`)
 		.then( response => response.json() )
 );
 
