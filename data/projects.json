@@ -1,0 +1,53 @@
+[
+	{
+		"id": "neighborhood_map_react",
+		"title": "Neighborhood Map (ReactJS)",
+		"desc": "project_description",
+		"shortDesc": "An interactive and responsive web application built with React JS, Google Maps API, Forsquare API and Unsplash API. The map is centered in the city centre of Newcastle upon Tyne and it is showing 15 locations that are fetched from the Forsquare API.",
+		"achievements": [
+			"Created a Progressive Web App with React including a11y features.",
+			"The app runs successfully error-free and on all modern devices browsers."
+		],
+		"startDate": { "str": "10th of August, 2018", "num": 20180810 },
+		"endDate": { "str": "16th of August, 2018", "num": 20180816 },
+		"location": [
+			{ "title": "Github", "url": "https://github.com/markoboy/Newcastle-NeighboorhoodMap", "iconType": "fab", "icon": "github", "color": "#000" },
+			{ "title": "Live page", "url": "https://markoboy.github.io/Newcastle-NeighboorhoodMap/", "iconType": "fas", "icon": "globe", "color": "#0000AA" }
+		],
+		"techUsed": [
+			{ "title": "HTML", "iconType": "fab", "icon": "html5", "color": "#e34f26" },
+			{ "title": "CSS", "iconType": "fab", "icon": "css3-alt", "color": "darkblue" },
+			{ "title": "JavaScript", "iconType": "fab", "icon": "js-square", "color": "#f7df1e" },
+			{ "title": "React", "iconType": "fab", "icon": "react", "color": "#00d8ff" }
+		],
+		"image": {
+			"regular": "https://i.imgur.com/VnuJ00z.jpg",
+			"large": ""
+		}
+	},
+	{
+		"id": "restaurant_reviews_app",
+		"title": "Restaurant Reviews App",
+		"desc": "project_description",
+		"shortDesc": "Project's short description.",
+		"achievements": [
+			"Updated a static webpage to a responsive mobile-ready application.",
+			"Implemented an offline-first app with the use of Service Worker API."
+		],
+		"startDate": { "str": "7th of July, 2018", "num": 20180707 },
+		"endDate": { "str": "16th of July, 2018", "num": 20180716 },
+		"location": [
+			{ "title": "Github", "url": "https://github.com/markoboy/RestaurantReviewsApp", "iconType": "fab", "icon": "github", "color": "#000" },
+			{ "title": "Live page", "url": "https://markoboy.github.io/RestaurantReviewsApp/", "iconType": "fas", "icon": "globe", "color": "#0000AA" }
+		],
+		"techUsed": [
+			{ "title": "HTML", "iconType": "fab", "icon": "html5", "color": "#e34f26" },
+			{ "title": "CSS", "iconType": "fab", "icon": "css3-alt", "color": "darkblue" },
+			{ "title": "JavaScript", "iconType": "fab", "icon": "js-square", "color": "#f7df1e" }
+		],
+		"image": {
+			"regular": "",
+			"large": ""
+		}
+	}
+]
