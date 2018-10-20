@@ -187,6 +187,94 @@
 	justify-content: space-around;
 }
 
+.projects_container {
+	text-align: center;
+	font-size: 0.9em;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+.project_container {
+	position: relative;
+	margin: 0.5em 0.5em;
+	padding: 0.7em 0.5em 2.3em; /* Let bottom padding for the project links */
+	border: 1px solid lightgrey;
+	border-radius: 0 0 16px 0;
+	border-color: transparent lightgrey lightgrey transparent;
+	box-shadow: 8px 8px 20px 0 lightgrey;
+
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.grid .project_container {
+	width: 42%;
+}
+
+.list .project_container {
+	width: 100%;
+}
+
+.project_header {
+	text-align: left;
+	height: 200px;
+	margin-bottom: 0.4em;
+	background: darkgrey;
+	background-position: center;
+	background-size: cover;
+
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-end;
+}
+
+.grid .project_header {
+	width: 100%;
+}
+
+.list .project_header {
+	width: 38%;
+}
+
+.project_logo_container {
+	font-size: 1.4em;
+	padding: 0.1em;
+	background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9));
+	border-bottom: 1px solid lightgrey;
+}
+
+.brand_logo {
+	margin: 0 4px;
+	font-size: 1.3em;
+	font-weight: 900;
+}
+
+.grid .project_content {
+	width: 100%;
+}
+
+.project_desc {
+	margin-top: 0.3em;
+}
+
+.grid .project_desc {
+	display: none;
+}
+
+.list .project_content {
+	width: calc(60% - 1.6em);
+	text-align: left;
+	margin: 0 0.8em;
+}
+
+.project_links {
+	position: absolute; /* Display project links on the bottom right corner of the container */
+	bottom: 0.5em;
+	right: 0.5em;
+}
+
 /* Small screens styles */
 @media screen and (max-width: 520px) {
 	.home_bottom_content .icon {
