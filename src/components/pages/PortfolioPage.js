@@ -15,6 +15,7 @@ class PortfolioPage extends Component {
 
 	componentDidMount() {
 		document.title = 'Portfolio Page | Athanasios Markou';
+		this.setState({ projects: this.props.projects });
 	}
 
 	componentDidUpdate(prevProps, prevState) {
