@@ -1,12 +1,12 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const PortfolioSort = ({ updateView }) => {
+const PortfolioSort = ({ updateView, sortProjects }) => {
 	return (
 		<section className="sort_container">
 			<div>
 				<label>Sort by:
-					<select className="sort_select">
+					<select onChange={(e) => sortProjects(e.target.value) } className="sort_select">
 						<option value="newest">Date - Recent</option>
 						<option value="oldest">Date - Former</option>
 						<option value="ascending">Title - A to Z</option>
