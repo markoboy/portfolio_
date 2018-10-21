@@ -15,6 +15,11 @@ class PortfolioPage extends Component {
 		document.title = 'Portfolio Page | Athanasios Markou';
 	}
 
+	updateProjectsView = view => {
+		if (view !== this.state.projectsView)
+			this.setState({ projectsView: view });
+	};
+
 	render() {
 		return (
 			<div className="main_container">
@@ -22,7 +27,7 @@ class PortfolioPage extends Component {
 					<PortfolioFilter />
 				</aside>
 				<main className="portfolio_main">
-					<PortfolioSort />
+					<PortfolioSort updateView={this.updateProjectsView} />
 					<PortfolioProjects projects={this.props.projects} view={this.state.projectsView} />
 				</main>
 			</div>
