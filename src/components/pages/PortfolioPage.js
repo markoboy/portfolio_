@@ -8,12 +8,11 @@ class PortfolioPage extends Component {
 	constructor() {
 		super();
 		this.state = {
-			projects: [],
 			projectsView: 'grid',
 			filtersLanguages: [],
 			filtersLibrary: [],
 			filtersFrameworks: [],
-			filtersList: new Map()
+			activeFilters: []
 		};
 	}
 
@@ -36,9 +35,8 @@ class PortfolioPage extends Component {
 			project.techUsed.forEach(tech => {
 				switch (tech.type) {
 					case "language":
-						if (!filtersLanguages.includes(tech.title)) {
+						if (!filtersLanguages.includes(tech.title))
 							filtersLanguages.push(tech.title);
-						}
 						break;
 					case "library":
 						if (!filtersLibrary.includes(tech.title))
@@ -51,11 +49,10 @@ class PortfolioPage extends Component {
 					default:
 						console.log(`${tech.title} - was not placed in any filter.`);
 				}
-				this.setState(prevState => ({ filtersList: prevState.filtersList.set(tech.title, false) }) );
 			})
 		});
 
-		this.setState({ projects: this.props.projects, filtersLanguages, filtersLibrary, filtersFrameworks });
+		this.setState({ filtersLanguages, filtersLibrary, filtersFrameworks });
 	}
 
 	updateProjectsView = view => {
@@ -69,18 +66,29 @@ class PortfolioPage extends Component {
 		let testTitle = /(ascending|descending)/;
 
 		if (testDate.test(by))
-			this.setState({ projects: sortByDate(this.state.projects, by) });
+			this.setState({ projects: sortByDate(this.props.projects, by) });
 		if (testTitle.test(by))
-			this.setState({ projects: sortByTitle(this.state.projects, by) });
+			this.setState({ projects: sortByTitle(this.props.projects, by) });
 	};
 
 	updateFilters = (name, isChecked) => {
 		this.setState(prevState => ({
-			filtersList: prevState.filtersList.set(name, isChecked)
+			activeFilters: isChecked ? prevState.activeFilters.concat(name) : prevState.activeFilters.filter(fil => fil !== name)
 		}));
 	};
 
 	render() {
+		let activeProjects = [];
+		activeProjects = this.state.activeFilters.length === 0 ?
+			this.props.projects :
+			this.props.projects.filter(project => {
+				let techs = [];
+				project.techUsed.forEach(tech => techs.push(tech.title));
+
+				let check = true;
+				this.state.activeFilters.forEach(filter => check = check && techs.includes(filter));
+				return check;
+			});
 		return (
 			<div className="main_container">
 				<aside className="portfolio_filter">
@@ -88,13 +96,13 @@ class PortfolioPage extends Component {
 						languages={this.state.filtersLanguages}
 						library={this.state.filtersLibrary}
 						frameworks={this.state.filtersFrameworks}
-						filtersList={this.state.filtersList}
+						activeFilters={this.state.activeFilters}
 						updateFilters={this.updateFilters}
 						/>
 				</aside>
 				<main className="portfolio_main">
 					<PortfolioSort updateView={this.updateProjectsView} sortProjects={this.sortProjects} />
-					<PortfolioProjects projects={this.state.projects} view={this.state.projectsView} />
+					<PortfolioProjects projects={activeProjects} view={this.state.projectsView} />
 				</main>
 			</div>
 		);
