@@ -12,43 +12,50 @@ class PortfolioPage extends Component {
 			projectsView: 'grid',
 			filtersLanguages: [],
 			filtersLibrary: [],
-			filtersFrameworks: []
+			filtersFrameworks: [],
+			filtersList: new Map()
 		};
 	}
 
 	componentDidMount() {
 		document.title = 'Portfolio Page | Athanasios Markou';
 
-		this.setState({ projects: this.props.projects });
+		this.setProjects();
 	}
 
 	componentDidUpdate(prevProps, prevState) {
 		if (prevProps.projects !== this.props.projects) {
-			let filtersLanguages = [], filtersLibrary = [], filtersFrameworks = [];
-
-			this.props.projects.forEach(project => {
-				project.techUsed.forEach(tech => {
-					switch (tech.type) {
-						case "language":
-							if (!filtersLanguages.includes(tech.title))
-								filtersLanguages.push(tech.title);
-							break;
-						case "library":
-							if (!filtersLibrary.includes(tech.title))
-								filtersLibrary.push(tech.title);
-							break;
-						case "framework":
-							if (!filtersFrameworks.includes(tech.title))
-								filtersFrameworks.push(tech.title);
-							break;
-						default:
-							console.log(`${tech.title} - was not placed in any filter.`);
-					}
-				})
-			});
-
-			this.setState({ projects: this.props.projects, filtersLanguages, filtersLibrary, filtersFrameworks });
+			this.setProjects();
 		}
+	}
+
+	setProjects = () => {
+		let filtersLanguages = [], filtersLibrary = [], filtersFrameworks = [];
+
+		this.props.projects.forEach(project => {
+			project.techUsed.forEach(tech => {
+				switch (tech.type) {
+					case "language":
+						if (!filtersLanguages.includes(tech.title)) {
+							filtersLanguages.push(tech.title);
+						}
+						break;
+					case "library":
+						if (!filtersLibrary.includes(tech.title))
+							filtersLibrary.push(tech.title);
+						break;
+					case "framework":
+						if (!filtersFrameworks.includes(tech.title))
+							filtersFrameworks.push(tech.title);
+						break;
+					default:
+						console.log(`${tech.title} - was not placed in any filter.`);
+				}
+				this.setState(prevState => ({ filtersList: prevState.filtersList.set(tech.title, false) }) );
+			})
+		});
+
+		this.setState({ projects: this.props.projects, filtersLanguages, filtersLibrary, filtersFrameworks });
 	}
 
 	updateProjectsView = view => {
@@ -67,6 +74,12 @@ class PortfolioPage extends Component {
 			this.setState({ projects: sortByTitle(this.state.projects, by) });
 	};
 
+	updateFilters = (name, isChecked) => {
+		this.setState(prevState => ({
+			filtersList: prevState.filtersList.set(name, isChecked)
+		}));
+	};
+
 	render() {
 		return (
 			<div className="main_container">
@@ -75,6 +88,8 @@ class PortfolioPage extends Component {
 						languages={this.state.filtersLanguages}
 						library={this.state.filtersLibrary}
 						frameworks={this.state.filtersFrameworks}
+						filtersList={this.state.filtersList}
+						updateFilters={this.updateFilters}
 						/>
 				</aside>
 				<main className="portfolio_main">
