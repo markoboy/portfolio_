@@ -1,7 +1,7 @@
 [
 	{
 		"id": "neighborhood_map_react",
-		"title": "Neighborhood Map (ReactJS)",
+		"title": "Neighborhood Map",
 		"desc": "project_description",
 		"shortDesc": "An interactive and responsive web application built with React JS, Google Maps API, Forsquare API and Unsplash API. The map is centered in the city centre of Newcastle upon Tyne and it is showing 15 locations that are fetched from the Forsquare API.",
 		"achievements": [
@@ -44,6 +44,134 @@
 			{ "title": "HTML", "type": "language", "iconType": "fab", "icon": "html5", "color": "#e34f26" },
 			{ "title": "CSS", "type": "language", "iconType": "fab", "icon": "css3-alt", "color": "darkblue" },
 			{ "title": "JavaScript", "type": "language", "iconType": "fab", "icon": "js-square", "color": "#f7df1e" }
+		],
+		"image": {
+			"regular": "",
+			"large": ""
+		}
+	},
+	{
+		"id": "react_my_reads_app",
+		"title": "My Reads App",
+		"desc": "project_description",
+		"shortDesc": "Project's short description.",
+		"achievements": [
+			"Updated a static webpage to a responsive mobile-ready application.",
+			"Implemented an offline-first app with the use of Service Worker API."
+		],
+		"startDate": { "str": "22nd of July, 2018", "num": 20180722 },
+		"endDate": { "str": "24th of July, 2018", "num": 20180724 },
+		"location": [
+			{ "title": "Github", "url": "https://github.com/markoboy/ReactMyReadsApp", "iconType": "fab", "icon": "github", "color": "#000" }
+		],
+		"techUsed": [
+			{ "title": "HTML", "type": "language", "iconType": "fab", "icon": "html5", "color": "#e34f26" },
+			{ "title": "CSS", "type": "language", "iconType": "fab", "icon": "css3-alt", "color": "darkblue" },
+			{ "title": "JavaScript", "type": "language", "iconType": "fab", "icon": "js-square", "color": "#f7df1e" },
+			{ "title": "React", "type": "library", "iconType": "fab", "icon": "react", "color": "#00d8ff" }
+		],
+		"image": {
+			"regular": "",
+			"large": ""
+		}
+	},
+	{
+		"id": "classic_arcade_game_frogger",
+		"title": "Classic Arcade Game: Frogger",
+		"desc": "project_description",
+		"shortDesc": "Project's short description.",
+		"achievements": [
+			"Updated a static webpage to a responsive mobile-ready application.",
+			"Implemented an offline-first app with the use of Service Worker API."
+		],
+		"startDate": { "str": "7th of May, 2018", "num": 20180507 },
+		"endDate": { "str": "17th of May, 2018", "num": 20180517 },
+		"location": [
+			{ "title": "Github", "url": "https://github.com/markoboy/ClassicArcadeGame-Frogger", "iconType": "fab", "icon": "github", "color": "#000" },
+			{ "title": "Live page", "url": "https://markoboy.github.io/ClassicArcadeGame-Frogger/", "iconType": "fas", "icon": "globe", "color": "#0000AA" }
+		],
+		"techUsed": [
+			{ "title": "HTML", "type": "language", "iconType": "fab", "icon": "html5", "color": "#e34f26" },
+			{ "title": "CSS", "type": "language", "iconType": "fab", "icon": "css3-alt", "color": "darkblue" },
+			{ "title": "JavaScript", "type": "language", "iconType": "fab", "icon": "js-square", "color": "#f7df1e" }
+		],
+		"image": {
+			"regular": "",
+			"large": ""
+		}
+	},
+	{
+		"id": "matching_card_game",
+		"title": "Matching Card Game",
+		"desc": "project_description",
+		"shortDesc": "Project's short description.",
+		"achievements": [
+			"Updated a static webpage to a responsive mobile-ready application.",
+			"Implemented an offline-first app with the use of Service Worker API."
+		],
+		"startDate": { "str": "25th of March, 2018", "num": 20180325 },
+		"endDate": { "str": "6th of April, 2018", "num": 20180406 },
+		"location": [
+			{ "title": "Github", "url": "https://github.com/markoboy/Matching-Game", "iconType": "fab", "icon": "github", "color": "#000" },
+			{ "title": "Live page", "url": "https://markoboy.github.io/Matching-Game/", "iconType": "fas", "icon": "globe", "color": "#0000AA" }
+		],
+		"techUsed": [
+			{ "title": "HTML", "type": "language", "iconType": "fab", "icon": "html5", "color": "#e34f26" },
+			{ "title": "CSS", "type": "language", "iconType": "fab", "icon": "css3-alt", "color": "darkblue" },
+			{ "title": "JavaScript", "type": "language", "iconType": "fab", "icon": "js-square", "color": "#f7df1e" }
+		],
+		"image": {
+			"regular": "",
+			"large": ""
+		}
+	},
+	{
+		"id": "pixel_art_maker",
+		"title": "Pixel Art Maker",
+		"desc": "project_description",
+		"shortDesc": "Project's short description.",
+		"achievements": [
+			"Updated a static webpage to a responsive mobile-ready application.",
+			"Implemented an offline-first app with the use of Service Worker API."
+		],
+		"startDate": { "str": "22nd of March, 2018", "num": 20180322 },
+		"endDate": { "str": "24th of March, 2018", "num": 20180324 },
+		"location": [
+			{ "title": "Github", "url": "https://github.com/markoboy/project-pixel-art-maker-starter", "iconType": "fab", "icon": "github", "color": "#000" },
+			{ "title": "Codepen", "url": "https://codepen.io/markoboy/pen/bazbYe", "iconType": "fab", "icon": "codepen", "color": "#000" },
+			{ "title": "Live page", "url": "https://codepen.io/markoboy/full/bazbYe/", "iconType": "fas", "icon": "globe", "color": "#0000AA" }
+		],
+		"techUsed": [
+			{ "title": "HTML", "type": "language", "iconType": "fab", "icon": "html5", "color": "#e34f26" },
+			{ "title": "CSS", "type": "language", "iconType": "fab", "icon": "css3-alt", "color": "darkblue" },
+			{ "title": "JavaScript", "type": "language", "iconType": "fab", "icon": "js-square", "color": "#f7df1e" },
+			{ "title": "jQuery", "type": "library", "iconType": "fab", "icon": "react", "color": "#00d8ff" }
+		],
+		"image": {
+			"regular": "",
+			"large": ""
+		}
+	},
+	{
+		"id": "feed_reader_testing",
+		"title": "RSS Feed Reader Testing",
+		"desc": "project_description",
+		"shortDesc": "Project's short description.",
+		"achievements": [
+			"Updated a static webpage to a responsive mobile-ready application.",
+			"Implemented an offline-first app with the use of Service Worker API."
+		],
+		"startDate": { "str": "29th of May, 2018", "num": 20180529 },
+		"endDate": { "str": "31st of May, 2018", "num": 20180531 },
+		"location": [
+			{ "title": "Github", "url": "https://github.com/markoboy/FeedReaderTesting", "iconType": "fab", "icon": "github", "color": "#000" },
+			{ "title": "Live page", "url": "https://markoboy.github.io/FeedReaderTesting/", "iconType": "fas", "icon": "globe", "color": "#0000AA" }
+		],
+		"techUsed": [
+			{ "title": "HTML", "type": "language", "iconType": "fab", "icon": "html5", "color": "#e34f26" },
+			{ "title": "CSS", "type": "language", "iconType": "fab", "icon": "css3-alt", "color": "darkblue" },
+			{ "title": "JavaScript", "type": "language", "iconType": "fab", "icon": "js-square", "color": "#f7df1e" },
+			{ "title": "Jasmine", "type": "framework", "iconType": "fab", "icon": "react", "color": "#00d8ff" }
 		],
 		"image": {
 			"regular": "",

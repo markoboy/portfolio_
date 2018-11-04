@@ -7,9 +7,9 @@ import './app.css';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faQuestion, faIdCard, faProjectDiagram, faBars, faChevronCircleDown, faGlobe, faThLarge, faThList } from '@fortawesome/free-solid-svg-icons';
-import { faLinkedinIn, faGithub, faFreeCodeCamp, faHtml5, faReact, faCss3Alt, faJsSquare, faAngular } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedinIn, faGithub, faFreeCodeCamp, faHtml5, faReact, faCss3Alt, faJsSquare, faAngular, faCodepen } from '@fortawesome/free-brands-svg-icons';
 
-library.add(faQuestion, faIdCard, faProjectDiagram, faBars, faChevronCircleDown, faGlobe, faThLarge, faThList, faLinkedinIn, faGithub, faFreeCodeCamp, faHtml5, faReact, faCss3Alt, faJsSquare, faAngular);
+library.add(faQuestion, faIdCard, faProjectDiagram, faBars, faChevronCircleDown, faGlobe, faThLarge, faThList, faLinkedinIn, faGithub, faFreeCodeCamp, faHtml5, faReact, faCss3Alt, faJsSquare, faAngular, faCodepen);
 
 class App extends Component {
 	constructor() {
