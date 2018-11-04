@@ -9,18 +9,46 @@ class PortfolioPage extends Component {
 		super();
 		this.state = {
 			projects: [],
-			projectsView: 'grid'
+			projectsView: 'grid',
+			filtersLanguages: [],
+			filtersLibrary: [],
+			filtersFrameworks: []
 		};
 	}
 
 	componentDidMount() {
 		document.title = 'Portfolio Page | Athanasios Markou';
+
 		this.setState({ projects: this.props.projects });
 	}
 
 	componentDidUpdate(prevProps, prevState) {
-		if (prevProps.projects !== this.props.projects)
-			this.setState({ projects: this.props.projects });
+		if (prevProps.projects !== this.props.projects) {
+			let filtersLanguages = [], filtersLibrary = [], filtersFrameworks = [];
+
+			this.props.projects.forEach(project => {
+				project.techUsed.forEach(tech => {
+					switch (tech.type) {
+						case "language":
+							if (!filtersLanguages.includes(tech.title))
+								filtersLanguages.push(tech.title);
+							break;
+						case "library":
+							if (!filtersLibrary.includes(tech.title))
+								filtersLibrary.push(tech.title);
+							break;
+						case "framework":
+							if (!filtersFrameworks.includes(tech.title))
+								filtersFrameworks.push(tech.title);
+							break;
+						default:
+							console.log(`${tech.title} - was not placed in any filter.`);
+					}
+				})
+			});
+
+			this.setState({ projects: this.props.projects, filtersLanguages, filtersLibrary, filtersFrameworks });
+		}
 	}
 
 	updateProjectsView = view => {
@@ -43,7 +71,11 @@ class PortfolioPage extends Component {
 		return (
 			<div className="main_container">
 				<aside className="portfolio_filter">
-					<PortfolioFilter />
+					<PortfolioFilter
+						languages={this.state.filtersLanguages}
+						library={this.state.filtersLibrary}
+						frameworks={this.state.filtersFrameworks}
+						/>
 				</aside>
 				<main className="portfolio_main">
 					<PortfolioSort updateView={this.updateProjectsView} sortProjects={this.sortProjects} />

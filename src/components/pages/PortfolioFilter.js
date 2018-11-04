@@ -1,24 +1,24 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class PortfolioFilter extends Component {
-	render() {
-		return (
-			<section className="filter_container">
-				<h4>Active filters:</h4>
-				<h4>Filter by:</h4>
-				<h4>Languages</h4>
-				<label><input type="checkbox" /> HTML5</label>
-				<label><input type="checkbox" /> CSS3</label>
-				<label><input type="checkbox" /> JavaScript</label>
-				<h4>Libraries</h4>
-				<label><input type="checkbox" /> jQuery</label>
-				<label><input type="checkbox" /> React</label>
-				<h4>Frameworks</h4>
-				<label><input type="checkbox" /> Angular</label>
-				<label><input type="checkbox" /> Jasmine</label>
-			</section>
-		);
-	}
+const PortfolioFilter = ({ languages, library, frameworks }) => {
+	return (
+		<section className="filter_container">
+			<h4>Active filters:</h4>
+			<h4>Filter by:</h4>
+			{languages.length > 0 && (<h4>Languages</h4>)}
+			{languages.map((lang, i) => (
+					<label key={i}><input type="checkbox" />{lang}</label>
+				))}
+			{library.length > 0 && (<h4>Libraries</h4>)}
+			{library.map((lib, i) => (
+					<label key={i}><input type="checkbox" />{lib}</label>
+				))}
+			{frameworks.length > 0 && (<h4>Frameworks</h4>)}
+			{frameworks.map((fram, i) => (
+					<label key={i}><input type="checkbox" />{fram}</label>
+				))}
+		</section>
+	);
 }
 
 export default PortfolioFilter;

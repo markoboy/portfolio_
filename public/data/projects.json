@@ -15,10 +15,10 @@
 			{ "title": "Live page", "url": "https://markoboy.github.io/Newcastle-NeighboorhoodMap/", "iconType": "fas", "icon": "globe", "color": "#0000AA" }
 		],
 		"techUsed": [
-			{ "title": "HTML", "iconType": "fab", "icon": "html5", "color": "#e34f26" },
-			{ "title": "CSS", "iconType": "fab", "icon": "css3-alt", "color": "darkblue" },
-			{ "title": "JavaScript", "iconType": "fab", "icon": "js-square", "color": "#f7df1e" },
-			{ "title": "React", "iconType": "fab", "icon": "react", "color": "#00d8ff" }
+			{ "title": "HTML", "type": "language", "iconType": "fab", "icon": "html5", "color": "#e34f26" },
+			{ "title": "CSS", "type": "language", "iconType": "fab", "icon": "css3-alt", "color": "darkblue" },
+			{ "title": "JavaScript", "type": "language", "iconType": "fab", "icon": "js-square", "color": "#f7df1e" },
+			{ "title": "React", "type": "library", "iconType": "fab", "icon": "react", "color": "#00d8ff" }
 		],
 		"image": {
 			"regular": "https://i.imgur.com/VnuJ00z.jpg",
@@ -41,9 +41,9 @@
 			{ "title": "Live page", "url": "https://markoboy.github.io/RestaurantReviewsApp/", "iconType": "fas", "icon": "globe", "color": "#0000AA" }
 		],
 		"techUsed": [
-			{ "title": "HTML", "iconType": "fab", "icon": "html5", "color": "#e34f26" },
-			{ "title": "CSS", "iconType": "fab", "icon": "css3-alt", "color": "darkblue" },
-			{ "title": "JavaScript", "iconType": "fab", "icon": "js-square", "color": "#f7df1e" }
+			{ "title": "HTML", "type": "language", "iconType": "fab", "icon": "html5", "color": "#e34f26" },
+			{ "title": "CSS", "type": "language", "iconType": "fab", "icon": "css3-alt", "color": "darkblue" },
+			{ "title": "JavaScript", "type": "language", "iconType": "fab", "icon": "js-square", "color": "#f7df1e" }
 		],
 		"image": {
 			"regular": "",
