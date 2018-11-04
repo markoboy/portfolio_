@@ -18,6 +18,7 @@ class PortfolioPage extends Component {
 
 	componentDidMount() {
 		document.title = 'Portfolio Page | Athanasios Markou';
+		window.scrollTo(0, 0);
 
 		this.setProjects();
 	}
