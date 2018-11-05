@@ -251,6 +251,11 @@
 	font-weight: 900;
 }
 
+.brand_logo img {
+	max-width: 28px;
+	vertical-align: -6%;
+}
+
 .grid .project_content {
 	width: 100%;
 }
