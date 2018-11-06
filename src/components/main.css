@@ -182,11 +182,48 @@
 	border-radius: 20px;
 }
 
+/* Sort view container */
 .sort_container {
+	font-size: 0.85em;
 	display: flex;
 	justify-content: space-around;
 }
 
+.sort_view_btn[aria-pressed] {
+	cursor: pointer;
+	color: white;
+	font-size: 1.2em;
+	margin: 0 3px;
+	border-color: rgba(0, 150, 255, 0.5);
+	border-radius: 6px;
+	box-shadow: 0 1px 2px hsl(261, 27%, 55%);
+	text-shadow: 0 -1px 1px hsl(261, 27%, 25%);
+	background-color: hsl(261, 82%, 51%);
+	background-image: linear-gradient(to bottom, rgba(0, 191, 255, 1), rgba(0, 191, 255, 0.5));
+	transition: border-color 0.2s linear, background-color 0.2s linear, background-image 0.2s linear;
+}
+
+.sort_view_btn[aria-pressed]:hover, .sort_view_btn[aria-pressed]:focus {
+	border-color: rgba(0, 150, 255, 0.2);
+	background-color: hsl(261, 82%, 31%);
+	background-image: linear-gradient(to bottom, rgba(0, 150, 255, 0.7), rgba(0, 150, 255, 0.2));
+}
+
+.sort_view_btn[aria-pressed="true"] {
+  border-color: rgba(100, 100, 255, 0.3);
+  background-color: hsl(261, 82%, 31%);
+  background-image: linear-gradient(to bottom, rgba(50, 150, 255, 0.5), rgba(50, 150, 255, 0.1));
+  box-shadow: inset 0 3px 5px 1px rgba(100, 100, 255, 0.3);
+}
+
+.sort_view_btn[aria-pressed="true"]:hover, .sort_view_btn[aria-pressed="true"]:focus {
+  border-color: rgba(50, 50, 200, 0.1);
+  background-color: hsl(261, 82%, 31%);
+  background-image: linear-gradient(to bottom, rgba(50, 50, 200, 0.4), rgba(50, 50, 200, 0.2));
+  box-shadow: inset 0 3px 5px 1px rgba(50, 50, 200, 0.1);
+}
+
+/* Projects container */
 .projects_container {
 	text-align: center;
 	font-size: 0.9em;

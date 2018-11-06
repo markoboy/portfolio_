@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const PortfolioSort = ({ updateView, sortProjects }) => {
+const PortfolioSort = ({ updateView, view, sortProjects }) => {
 	return (
 		<section className="sort_container">
 			<div>
@@ -16,8 +16,8 @@ const PortfolioSort = ({ updateView, sortProjects }) => {
 			</div>
 			<p className="sort_view">
 				View:
-				<button className="sort_view_btn" onClick={() => updateView('grid')} title="Grid" ><FontAwesomeIcon icon="th-large" /></button>
-				<button className="sort_view_btn" onClick={() => updateView('list')} title="List" ><FontAwesomeIcon icon="th-list" /></button>
+				<button className="sort_view_btn" aria-pressed={view === "grid" ? true : false} onClick={() => updateView('grid')} title="Grid" ><FontAwesomeIcon icon="th-large" /></button>
+				<button className="sort_view_btn" aria-pressed={view === "list" ? true : false} onClick={() => updateView('list')} title="List" ><FontAwesomeIcon icon="th-list" /></button>
 			</p>
 		</section>
 	);

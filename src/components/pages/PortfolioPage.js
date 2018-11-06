@@ -102,7 +102,7 @@ class PortfolioPage extends Component {
 						/>
 				</aside>
 				<main className="portfolio_main">
-					<PortfolioSort updateView={this.updateProjectsView} sortProjects={this.sortProjects} />
+					<PortfolioSort updateView={this.updateProjectsView} view={this.state.projectsView} sortProjects={this.sortProjects} />
 					<PortfolioProjects projects={activeProjects} view={this.state.projectsView} />
 				</main>
 			</div>
