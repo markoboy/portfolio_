@@ -225,6 +225,7 @@
 }
 
 .sort_select {
+	cursor: pointer;
 	font-size: 1em;
 	margin-left: 5px;
 	padding: 2px;
