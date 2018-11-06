@@ -11,7 +11,7 @@ const PortfolioProjects = ({ projects, view }) => {
 						<div className="project_logo_container">
 							{project.techUsed.map((tech, ind) => (
 								<span className="brand_logo" key={ind} title={tech.title} style={{ 'color': `${tech.color}`}}>
-									{tech.iconType === "svg" ? <img src={tech.icon} alt={tech.title}></img> : <FontAwesomeIcon icon={[tech.iconType, tech.icon]} />}
+									{tech.iconType === "svg" ? <img src={process.env.PUBLIC_URL+tech.icon} alt={tech.title}></img> : <FontAwesomeIcon icon={[tech.iconType, tech.icon]} />}
 								</span>
 							))}
 						</div>
