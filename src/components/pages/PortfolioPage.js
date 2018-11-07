@@ -79,6 +79,10 @@ class PortfolioPage extends Component {
 		}));
 	};
 
+	clearFilters = () => {
+		this.setState({ activeFilters: [] });
+	};
+
 	toggleSidebar = (e) => {
 		// If there is an event passed and the element clicked is a button return.
 		if (e && e.target.nodeName === 'BUTTON') return;
@@ -106,6 +110,7 @@ class PortfolioPage extends Component {
 						frameworks={this.state.filtersFrameworks}
 						activeFilters={this.state.activeFilters}
 						updateFilters={this.updateFilters}
+						clearFilters={this.clearFilters}
 						toggleSidebar={this.toggleSidebar}
 					/>
 				</aside>

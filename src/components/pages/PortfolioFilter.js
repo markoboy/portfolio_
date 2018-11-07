@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 
-const PortfolioFilter = ({ languages, library, frameworks, activeFilters, updateFilters, toggleSidebar }) => {
+const PortfolioFilter = ({ languages, library, frameworks, activeFilters, updateFilters, clearFilters, toggleSidebar }) => {
 	return (
 		<section className="filter_container">
 			{activeFilters.length > 0 && (
@@ -30,7 +30,7 @@ const PortfolioFilter = ({ languages, library, frameworks, activeFilters, update
 				))}
 			<div className="filter_btn_container">
 				<button className="filter_btn done" onClick={() => toggleSidebar()} >{activeFilters.length > 0 ? "Apply" : "Close"}</button>
-				{activeFilters.length > 0 && (<button className="filter_btn clear">Clear</button>)}
+				{activeFilters.length > 0 && (<button className="filter_btn clear" onClick={() => clearFilters()}>Clear</button>)}
 			</div>
 		</section>
 	);
