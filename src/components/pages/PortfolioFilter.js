@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 
-const PortfolioFilter = ({ languages, library, frameworks, activeFilters, updateFilters }) => {
+const PortfolioFilter = ({ languages, library, frameworks, activeFilters, updateFilters, toggleSidebar }) => {
 	return (
 		<section className="filter_container">
 			{activeFilters.length > 0 && (
@@ -29,7 +29,7 @@ const PortfolioFilter = ({ languages, library, frameworks, activeFilters, update
 					<label key={i}><input type="checkbox" value={fram} checked={activeFilters.includes(fram)} onChange={(e) => updateFilters(e.target.value, e.target.checked) } />{fram}</label>
 				))}
 			<div className="filter_btn_container">
-				<button className="filter_btn done">{activeFilters.length > 0 ? "Apply" : "Close"}</button>
+				<button className="filter_btn done" onClick={() => toggleSidebar()} >{activeFilters.length > 0 ? "Apply" : "Close"}</button>
 				{activeFilters.length > 0 && (<button className="filter_btn clear">Clear</button>)}
 			</div>
 		</section>

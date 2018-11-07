@@ -106,6 +106,7 @@ class PortfolioPage extends Component {
 						frameworks={this.state.filtersFrameworks}
 						activeFilters={this.state.activeFilters}
 						updateFilters={this.updateFilters}
+						toggleSidebar={this.toggleSidebar}
 					/>
 				</aside>
 				<div className="main_container" onClick={(e) => this.state.filterSidebarOpened && this.toggleSidebar(e)} >
