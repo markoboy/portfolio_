@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { sortByDate, sortByTitle } from '../../utils/DataAPI';
 import PortfolioFilter from './PortfolioFilter';
 import PortfolioSort from './PortfolioSort';
@@ -96,26 +96,28 @@ class PortfolioPage extends Component {
 				return check;
 			});
 		return (
-			<div className="main_container">
-{/*				<aside className="portfolio_filter">
+			<Fragment>
+				<aside className={this.state.filterSidebarOpened ? "portfolio_filter open" : "portfolio_filter"}>
 					<PortfolioFilter
 						languages={this.state.filtersLanguages}
 						library={this.state.filtersLibrary}
 						frameworks={this.state.filtersFrameworks}
 						activeFilters={this.state.activeFilters}
 						updateFilters={this.updateFilters}
-						/>
-				</aside>*/}
-				<main className="portfolio_main">
-					<PortfolioSort
-						updateView={this.updateProjectsView}
-						view={this.state.projectsView}
-						sortProjects={this.sortProjects}
-						activeFilters={this.state.activeFilters}
-						toggleSidebar={this.toggleSidebar} />
-					<PortfolioProjects projects={activeProjects} view={this.state.projectsView} />
-				</main>
-			</div>
+					/>
+				</aside>
+				<div className="main_container" onClick={() => this.state.filterSidebarOpened && this.toggleSidebar()} >
+					<main className="portfolio_main">
+						<PortfolioSort
+							updateView={this.updateProjectsView}
+							view={this.state.projectsView}
+							sortProjects={this.sortProjects}
+							activeFilters={this.state.activeFilters}
+							toggleSidebar={this.toggleSidebar} />
+						<PortfolioProjects projects={activeProjects} view={this.state.projectsView} />
+					</main>
+				</div>
+			</Fragment>
 		);
 	}
 }
