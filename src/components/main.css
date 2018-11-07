@@ -190,7 +190,7 @@
 	align-items: center;
 }
 
-.sort_view_btn[aria-pressed] {
+.sort_view_btn {
 	cursor: pointer;
 	color: white;
 	font-size: 1.2em;
@@ -204,7 +204,7 @@
 	transition: border-color 0.2s linear, background-color 0.2s linear, background-image 0.2s linear;
 }
 
-.sort_view_btn[aria-pressed]:hover, .sort_view_btn[aria-pressed]:focus {
+.sort_view_btn:hover, .sort_view_btn:focus {
 	border-color: rgba(0, 150, 255, 0.2);
 	background-color: hsl(261, 82%, 31%);
 	background-image: linear-gradient(to bottom, rgba(0, 150, 255, 0.7), rgba(0, 150, 255, 0.2));
@@ -231,6 +231,7 @@
 	margin-left: 5px;
 	padding: 2px;
 	border: none;
+	background-color: #fcfcfc;
 	border-bottom: 1px solid rgba(50, 50, 200, 0.6);
 	border-radius: 6px;
 	box-shadow: 0 1px 2px rgba(50, 50, 200, 0.3);
@@ -260,7 +261,7 @@
 }
 
 .grid .project_container {
-	width: 42%;
+	width: 29%;
 }
 
 .list .project_container {

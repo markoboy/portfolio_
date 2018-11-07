@@ -92,7 +92,7 @@ class PortfolioPage extends Component {
 			});
 		return (
 			<div className="main_container">
-				<aside className="portfolio_filter">
+{/*				<aside className="portfolio_filter">
 					<PortfolioFilter
 						languages={this.state.filtersLanguages}
 						library={this.state.filtersLibrary}
@@ -100,9 +100,9 @@ class PortfolioPage extends Component {
 						activeFilters={this.state.activeFilters}
 						updateFilters={this.updateFilters}
 						/>
-				</aside>
+				</aside>*/}
 				<main className="portfolio_main">
-					<PortfolioSort updateView={this.updateProjectsView} view={this.state.projectsView} sortProjects={this.sortProjects} />
+					<PortfolioSort updateView={this.updateProjectsView} view={this.state.projectsView} sortProjects={this.sortProjects} activeFilters={this.state.activeFilters} />
 					<PortfolioProjects projects={activeProjects} view={this.state.projectsView} />
 				</main>
 			</div>
