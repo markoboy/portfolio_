@@ -1,11 +1,11 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const PortfolioSort = ({ updateView, view, sortProjects, activeFilters }) => {
+const PortfolioSort = ({ updateView, view, sortProjects, activeFilters, toggleSidebar }) => {
 	return (
 		<section className="sort_container">
 			<div className="filter_btn" >
-				<button className="sort_view_btn" ><FontAwesomeIcon icon="sliders-h" /> Filter ({activeFilters.length})</button>
+				<button className="sort_view_btn" onClick={() => toggleSidebar()} ><FontAwesomeIcon icon="sliders-h" /> Filter ({activeFilters.length})</button>
 			</div>
 			<div className="sort_view">
 				View:{" "}

@@ -9,6 +9,7 @@ class PortfolioPage extends Component {
 		super();
 		this.state = {
 			projectsView: 'grid',
+			filterSidebarOpened: false,
 			filtersLanguages: [],
 			filtersLibrary: [],
 			filtersFrameworks: [],
@@ -78,6 +79,10 @@ class PortfolioPage extends Component {
 		}));
 	};
 
+	toggleSidebar = () => {
+		this.setState(prevState => ({ filterSidebarOpened: !prevState.filterSidebarOpened }));
+	};
+
 	render() {
 		let activeProjects = [];
 		activeProjects = this.state.activeFilters.length === 0 ?
@@ -102,7 +107,12 @@ class PortfolioPage extends Component {
 						/>
 				</aside>*/}
 				<main className="portfolio_main">
-					<PortfolioSort updateView={this.updateProjectsView} view={this.state.projectsView} sortProjects={this.sortProjects} activeFilters={this.state.activeFilters} />
+					<PortfolioSort
+						updateView={this.updateProjectsView}
+						view={this.state.projectsView}
+						sortProjects={this.sortProjects}
+						activeFilters={this.state.activeFilters}
+						toggleSidebar={this.toggleSidebar} />
 					<PortfolioProjects projects={activeProjects} view={this.state.projectsView} />
 				</main>
 			</div>
