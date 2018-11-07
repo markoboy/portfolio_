@@ -79,7 +79,9 @@ class PortfolioPage extends Component {
 		}));
 	};
 
-	toggleSidebar = () => {
+	toggleSidebar = (e) => {
+		// If there is an event passed and the element clicked is a button return.
+		if (e && e.target.nodeName === 'BUTTON') return;
 		this.setState(prevState => ({ filterSidebarOpened: !prevState.filterSidebarOpened }));
 	};
 
@@ -106,7 +108,7 @@ class PortfolioPage extends Component {
 						updateFilters={this.updateFilters}
 					/>
 				</aside>
-				<div className="main_container" onClick={() => this.state.filterSidebarOpened && this.toggleSidebar()} >
+				<div className="main_container" onClick={(e) => this.state.filterSidebarOpened && this.toggleSidebar(e)} >
 					<main className="portfolio_main">
 						<PortfolioSort
 							updateView={this.updateProjectsView}
