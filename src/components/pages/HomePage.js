@@ -1,17 +1,30 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Loader from './Loader';
 
 class HomePage extends Component {
+	constructor() {
+		super();
+		this.state = {
+			url: ''
+		};
+	}
+
 	componentDidMount() {
 		document.title = 'Home Page | Athanasios Markou';
 		window.scrollTo(0, 0);
+
+		let img = new Image();
+		img.src = 'https://i.imgur.com/E0kcRWf.jpg';
+		img.onload = () => this.setState({ url: img.src });
 	}
 
 	render() {
+		if (!this.state.url) return (<Loader />);
 		return (
 			<main>
-				<section className="home_top">
+				<section className="home_top" style={{backgroundImage: `url(${this.state.url})`}}>
 					<div className="home_top_container">
 						<div className="home_top_content">
 							<p>Welcome to my personal webpage. My name is Athanasios and I am currently living in the city of Newcastle. I have recently received a certificate from Udacity as a Front-End Web Developer and I am in search for new opportunities.</p>
