@@ -4,9 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const PortfolioSort = ({ updateView, view, sortProjects, activeFilters, toggleSidebar }) => {
 	return (
 		<section className="sort_container">
-			<div className="filter_btn" >
-				<button className="sort_view_btn" onClick={() => toggleSidebar()} ><FontAwesomeIcon icon="sliders-h" /> Filter ({activeFilters.length})</button>
-			</div>
+			<button className="sort_view_btn" onClick={() => toggleSidebar()} ><FontAwesomeIcon icon="sliders-h" /> Filter ({activeFilters.length})</button>
 			<div className="sort_view">
 				View:{" "}
 				<button
