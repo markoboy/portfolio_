@@ -85,7 +85,7 @@ class PortfolioPage extends Component {
 
 	toggleSidebar = (e) => {
 		// If there is an event passed and the element clicked is a button return.
-		if (e && e.target.nodeName === 'BUTTON') return;
+		if (e && e.target.id === 'filter_button') return;
 		this.setState(prevState => ({ filterSidebarOpened: !prevState.filterSidebarOpened }));
 	};
 
