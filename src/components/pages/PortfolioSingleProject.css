@@ -1,0 +1,123 @@
+/** ==============================
+ *  Breadcrumb styles.
+ *  =============================*/
+nav[aria-label="Breadcrumb"] {
+	position: relative;
+	z-index: 10;
+	color: white;
+	background-image: linear-gradient(to bottom, #6d6d6d, #3d3d3d);
+}
+
+.breadcrumb {
+	list-style: none;
+	max-width: calc(980px - 1.5em);
+	margin: 0 auto;
+	padding: 0.3em 0.8em;
+}
+
+.breadcrumb li {
+	display: inline-block;
+	padding: 0 0.2em;
+}
+
+.breadcrumb li + li:before {
+	content: "/ ";
+}
+
+.breadcrumb li a {
+	color: #f3f3f3;
+}
+
+/** ==============================
+ *  Project main container styles.
+ *  =============================*/
+.project_main_image_container {
+	height: 50vh;
+	background-position: top;
+	background-size: cover;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-end;
+}
+
+.project_main_logo {
+	max-width: 980px;
+	margin: 0 auto;
+	padding: 0 0.2em;
+}
+
+.project_main_container {
+	max-width: 980px;
+	margin: 0 auto 1em;
+}
+
+.project_main_container h3 {
+	border-left: 2px dashed #a3a3a3;
+	padding: 0.7em 0.5em 0;
+}
+
+.project_main_dates {
+	font-size: 0.8em;
+	color: #636363;
+	border: 2px dashed #a3a3a3;
+	border-color: transparent transparent #a3a3a3 #a3a3a3;
+	border-radius: 0 0 0 12px;
+	padding: 0 0.5em;
+}
+
+.project_main_desc {
+	border: 2px dashed #a3a3a3;
+	border-color: transparent #a3a3a3 #a3a3a3 transparent;
+	border-radius: 0 0 12px 0;
+	padding: 0.3em 0.5em;
+}
+
+.project_main_achievements {
+	border: 2px dashed #a3a3a3;
+	border-color: transparent transparent #a3a3a3 #a3a3a3;
+	border-radius: 0 0 0 12px;
+	padding: 0.3em 0.5em;
+}
+
+.achievements_list {
+	list-style: circle;
+	margin-left: 1em;
+}
+
+.project_main_links {
+	text-align: center;
+	font-size: 0.95em;
+	border: 2px dashed #a3a3a3;
+	border-color: transparent #a3a3a3 #a3a3a3 transparent;
+	border-radius: 0 0 12px 0;
+	padding: 0.3em 0.5em;
+}
+
+.project_main_more {
+	text-align: center;
+	padding: 1em 0.5em 0.5em;
+}
+
+.project_main_more_container {
+	margin-top: 0.5em;
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+.project_main_more_project {
+	width: 40%;
+}
+
+.project_main_more_image {
+	display: block;
+	height: 20vh;
+	background-position: top;
+	background-size: cover;
+	margin-bottom: 0.2em;
+	border-radius: 12px;
+	box-shadow: 2px -1px 10px 3px lightgray;
+}

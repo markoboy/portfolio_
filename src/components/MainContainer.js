@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import PortfolioPage from './pages/PortfolioPage';
+import PortfolioSingleProject from './pages/PortfolioSingleProject';
 import Loader from './pages/Loader';
-import Test from './pages/Test';
 import NotFound from './pages/NotFound';
 import './main.css';
 
@@ -17,8 +17,9 @@ class MainContainer extends Component {
 						this.props.projects.length > 0 ? <PortfolioPage projects={this.props.projects} /> : <Loader />
 					)} />
 
-					<Route exact path="/test" component={Test} />
-					<Route exact path="/test/:id" component={Test} />
+					<Route exact path="/portfolio/:id" render={( { match } ) => (
+						<PortfolioSingleProject projects={this.props.projects} id={match.params.id} />
+					)} />
 
 					<Route component={NotFound} />
 				</Switch>
