@@ -8,7 +8,7 @@ class Header extends Component {
 		const { toggleMenu, closeMenu, menuOpened } = this.props;
 
 		return (
-			<header className="header" onClick={(e) => closeMenu(e.target)}>
+			<header className={menuOpened ? "header open" : "header"} onClick={(e) => closeMenu(e.target)}>
 				<div className="header_container">
 					<div className="header_heading">
 						<h1>Athanasios Markou</h1>
@@ -20,7 +20,7 @@ class Header extends Component {
 							onClick={() => toggleMenu()}
 							>Menu {menuOpened ? <FontAwesomeIcon icon="chevron-circle-down" /> : <FontAwesomeIcon icon="bars" />}</button>
 					</div>
-					<nav className={menuOpened ? "navlink_container open" : "navlink_container"}>
+					<nav className="navlink_container">
 						<ul className="navlink_list">
 							<li className="navlink_item"><NavLink exact to="/">Home</NavLink></li>
 							<li className="navlink_item"><NavLink to="/portfolio">Portfolio</NavLink></li>

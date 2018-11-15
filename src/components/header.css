@@ -101,6 +101,10 @@
 
 /* Medium screen styles */
 @media screen and (max-width: 815px) {
+	.header.open {
+		z-index: 20;
+	}
+
 	.header_container {
 		position: relative;
 	}
@@ -117,7 +121,7 @@
 		transition: opacity 0.2s linear, visibility 0.2s linear, transform 0.2s linear;
 	}
 
-	.navlink_container.open {
+	.open .navlink_container {
 		visibility: visible;
 		opacity: 1;
 		transform: translate(0, 100%) scaleY(1);
@@ -157,7 +161,7 @@
 		transition: max-height 0.3s linear, opacity 0.2s linear, visibility 0.2s linear;
 	}
 
-	.navlink_container.open {
+	.open .navlink_container {
 		max-height: 400px;
 		transform: translate(0, 100%);
 	}
