@@ -23,6 +23,9 @@ const PortfolioSingleProject = ({ id, projects }) => {
 	// If the project was not found then display the NotFound Component.
 	if (projects.length > 0 && !project) return (<NotFound />);
 
+	// After the project is found set the title.
+	document.title = `${project.title} | Athanasios Markou`;
+
 	// Store previous and next projects to show at the bottom of the page.
 	let moreProjects = [];
 	if (ind === 0) {
