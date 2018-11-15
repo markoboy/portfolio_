@@ -2,11 +2,13 @@
 	{
 		"id": "neighborhood_map_react",
 		"title": "Neighborhood Map",
-		"desc": "project_description",
+		"desc": "Neighborhood Map (React) is the last project of Udacity Front-End Developer Nanodegree program. This is a project build on ReactJS showing a Google map of my neighborhood with some locations that are fetched randomly from Foursquare API. There is a list showing all available locations that can be filtered by an input search bar. The map has markers on it that represents the showing list, so if you filter the list, the markers will be filtered as well.",
 		"shortDesc": "An interactive and responsive web application built with React JS, Google Maps API, Forsquare API and Unsplash API. The map is centered in the city centre of Newcastle upon Tyne and it is showing 15 locations that are fetched from the Forsquare API.",
 		"achievements": [
-			"Created a Progressive Web App with React including a11y features.",
-			"The app runs successfully error-free and on all modern devices browsers."
+			"Created a Progressive Web App with React including accesibility features.",
+			"Focus is approprietly managed. Elements on the page have semantic tags or an ARIA role attribute.",
+			"The app runs successfully error-free and on all modern devices browsers.",
+			"Failed data requests are handled by common fallback techniques with an errorHandle function."
 		],
 		"startDate": { "str": "10th of August, 2018", "num": 20180810 },
 		"endDate": { "str": "16th of August, 2018", "num": 20180816 },
@@ -28,17 +30,17 @@
 	{
 		"id": "restaurant_reviews_app",
 		"title": "Restaurant Reviews App",
-		"desc": "project_description",
-		"shortDesc": "Project's short description.",
+		"desc": "For the Restaurant Reviews project my goal was to convert a static webpage to a mobile-ready web application. Through the course I was given a static design that lacks accessibility in order to convert the design to be responsive on different sized displays and to make it accessible for screen reader users. In addition, I had to add a service worker in order to create an offline experience for the users of the app.",
+		"shortDesc": "A responsive mobile-ready web application with accessibility features build with HTML, CSS and JavaScript. The app displays a few restaurants with a map and a filter option to sort them.",
 		"achievements": [
 			"Updated a static webpage to a responsive mobile-ready application.",
+			"Correct use of web semantics tags, tabindex and ARIA roles attributes.",
 			"Implemented an offline-first app with the use of Service Worker API."
 		],
 		"startDate": { "str": "7th of July, 2018", "num": 20180707 },
 		"endDate": { "str": "16th of July, 2018", "num": 20180716 },
 		"location": [
-			{ "title": "Github", "url": "https://github.com/markoboy/RestaurantReviewsApp", "iconType": "fab", "icon": "github", "color": "#000" },
-			{ "title": "Live page", "url": "https://markoboy.github.io/RestaurantReviewsApp/", "iconType": "fas", "icon": "globe", "color": "#0000AA" }
+			{ "title": "Github", "url": "https://github.com/markoboy/RestaurantReviewsApp", "iconType": "fab", "icon": "github", "color": "#000" }
 		],
 		"techUsed": [
 			{ "title": "HTML", "type": "language", "iconType": "fab", "icon": "html5", "color": "#e34f26" },
@@ -53,11 +55,12 @@
 	{
 		"id": "react_my_reads_app",
 		"title": "My Reads App",
-		"desc": "project_description",
-		"shortDesc": "Project's short description.",
+		"desc": "This is a project provided by Udacity with a static example of CSS and HTML without any React code. The puprose of this project is to turn the project into an interactive app by refactoring the static code. The page is showing three bookshelves; Currently Reading, Want to Read and Read shelves, you can move the books between the shelves by a drop down list from each book. You can also access a search page and search for books from a Books API provided by Udacity, the books have the same functions as the one shown on the shelves, so you can move books from there to your shelves.",
+		"shortDesc": "This is a project made in order to test my skills in React and create a single page app. This is made by using React Components, fetch API to get the books from Books API and React Router Dom to navigate within the page.",
 		"achievements": [
-			"Updated a static webpage to a responsive mobile-ready application.",
-			"Implemented an offline-first app with the use of Service Worker API."
+			"Updated a static webpage to an interactive React Application.",
+			"Correct use of FetchAPI to get and display books from BooksAPI.",
+			"Experience the use of React Router DOM to navigate withing the page."
 		],
 		"startDate": { "str": "22nd of July, 2018", "num": 20180722 },
 		"endDate": { "str": "24th of July, 2018", "num": 20180724 },
@@ -78,11 +81,11 @@
 	{
 		"id": "classic_arcade_game_frogger",
 		"title": "Classic Arcade Game: Frogger",
-		"desc": "project_description",
-		"shortDesc": "Project's short description.",
+		"desc": "This is a classic arcade game: Frogger that was created for Udacity Front End Nanodegree program and build with Object Oriented JavaScript. You got to choose a player and try to pass through the enemies (bugs), in order to reach to the water and increase your score. The enemies get faster, as well as the score you get is increased, the most times you get to the water.",
+		"shortDesc": "This is a classic arcade game build with Object Oriented JavaScript on HTML5 CanvasAPI. In this project I experienced how to achieve object inheritance and how to make simple physics like collision and player/enemies movements on the CanvasAPI.",
 		"achievements": [
-			"Updated a static webpage to a responsive mobile-ready application.",
-			"Implemented an offline-first app with the use of Service Worker API."
+			"Recreated a classic arcade game using Canvas API with Object Orientated JavaScript.",
+			"Learned and understanded the use of prototypes and object inheritance in JavaScript."
 		],
 		"startDate": { "str": "7th of May, 2018", "num": 20180507 },
 		"endDate": { "str": "17th of May, 2018", "num": 20180517 },
@@ -92,7 +95,6 @@
 		],
 		"techUsed": [
 			{ "title": "HTML", "type": "language", "iconType": "fab", "icon": "html5", "color": "#e34f26" },
-			{ "title": "CSS", "type": "language", "iconType": "fab", "icon": "css3-alt", "color": "darkblue" },
 			{ "title": "JavaScript", "type": "language", "iconType": "fab", "icon": "js-square", "color": "#f7df1e" }
 		],
 		"image": {
@@ -103,11 +105,12 @@
 	{
 		"id": "matching_card_game",
 		"title": "Matching Card Game",
-		"desc": "project_description",
-		"shortDesc": "Project's short description.",
+		"desc": "This is the third project of Udacity Front-End Developer Nanodegree, it is build with HTML for arranging the elements, CSS for giving style and animations and JavaScript for managing the game's states. By starting the game, it will start a timer, your goal is to match all the cards as fast as you can and with the least moves you can. How about you give it a try? :)",
+		"shortDesc": "Matching Card Game is a browser game which can be played from any modern device's browser. It is created using HTML, CSS and JavaScript to manipulate the DOM and manage game's states.",
 		"achievements": [
-			"Updated a static webpage to a responsive mobile-ready application.",
-			"Implemented an offline-first app with the use of Service Worker API."
+			"Created a responsive web browser game, accessible from any modern device.",
+			"Successfully manipulate the DOM to handle all the game's state with user interactions.",
+			"Experienced with CSS flex-box, animations and transitions to create a nice user experience."
 		],
 		"startDate": { "str": "25th of March, 2018", "num": 20180325 },
 		"endDate": { "str": "6th of April, 2018", "num": 20180406 },
@@ -128,11 +131,11 @@
 	{
 		"id": "pixel_art_maker",
 		"title": "Pixel Art Maker",
-		"desc": "project_description",
-		"shortDesc": "Project's short description.",
+		"desc": "As the last project of the first phase of Google Developer Challenge Scholarship, I had to use jQuery in order to turn an HTML table into a drawing canvas. After completing that, I experienced with adding CSS styles and more functionalities such as Toggle Grid, Reset, Clear, Save and Load Canvas.",
+		"shortDesc": "This was the last project from the first phase of Google Developer Challenge Scholarship. It is an HTML table used as a drawing canvas by using jQuery to manipulate the DOM and react to user interactions.",
 		"achievements": [
-			"Updated a static webpage to a responsive mobile-ready application.",
-			"Implemented an offline-first app with the use of Service Worker API."
+			"Created my first interactive application with the use of jQuery.",
+			"Got experience for event listeners and DOM manipulations."
 		],
 		"startDate": { "str": "22nd of March, 2018", "num": 20180322 },
 		"endDate": { "str": "24th of March, 2018", "num": 20180324 },
@@ -155,11 +158,11 @@
 	{
 		"id": "feed_reader_testing",
 		"title": "RSS Feed Reader Testing",
-		"desc": "project_description",
-		"shortDesc": "Project's short description.",
+		"desc": "This is a web-based application that reads RSS feeds from Udacity Blog, CSS Tricks, HTML5 Rocks and Linear Digressions. The project was originally made from another developer including the first test but they decided to start their own company. My role was to use Jasmine framework and create some tests ensuring that the app is running error-free.",
+		"shortDesc": "This is a web-based application that reads RSS feeds from Udacity Blog, CSS Tricks, HTML5 Rocks and Linear Digressions. My role was to use Jasmine framework and create some tests ensuring that the app is running error-free.",
 		"achievements": [
-			"Updated a static webpage to a responsive mobile-ready application.",
-			"Implemented an offline-first app with the use of Service Worker API."
+			"Created a test application suite for understanding Test Driven Development.",
+			"Tested the underlying business logic of the application, event handling and DOM manipulation."
 		],
 		"startDate": { "str": "29th of May, 2018", "num": 20180529 },
 		"endDate": { "str": "31st of May, 2018", "num": 20180531 },
@@ -168,8 +171,6 @@
 			{ "title": "Live page", "url": "https://markoboy.github.io/FeedReaderTesting/", "iconType": "fas", "icon": "globe", "color": "#0000AA" }
 		],
 		"techUsed": [
-			{ "title": "HTML", "type": "language", "iconType": "fab", "icon": "html5", "color": "#e34f26" },
-			{ "title": "CSS", "type": "language", "iconType": "fab", "icon": "css3-alt", "color": "darkblue" },
 			{ "title": "JavaScript", "type": "language", "iconType": "fab", "icon": "js-square", "color": "#f7df1e" },
 			{ "title": "Jasmine", "type": "framework", "iconType": "svg", "icon": "/img/jasmine.svg", "color": "#8a4182" }
 		],
