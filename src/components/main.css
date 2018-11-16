@@ -45,6 +45,49 @@
 	100% { transform: rotate(360deg); }
 }
 
+@keyframes reverseSpin {
+	0% { transform: rotate(100deg); }
+	100% { transform: rotate(-260deg); }
+}
+
+/** ==============================
+ *  NotFound page styles.
+ *  =============================*/
+.notFound_container {
+	margin: 2em auto;
+	max-width: 980px;
+	border: 2px solid lightgrey;
+	border-radius: 12px;
+}
+
+.notFound_container > * {
+	margin: 0.5em 1em;
+}
+
+.notFound_container h4, .notFound_container p {
+	border-bottom: 2px solid lightgrey;
+	padding-bottom: 0.3em;
+}
+
+.notFound_container ul {
+	margin-left: 2em;
+	list-style: circle;
+}
+
+.cog_container {
+	text-align: center;
+	padding: 1em;
+	position: relative;
+}
+
+.cog_left {
+	animation: spin 4s linear infinite;
+}
+
+.cog_right {
+	animation: reverseSpin 4s linear infinite;
+}
+
 /* Home page top styles */
 .home_top {
 	background-size: cover;

@@ -6,10 +6,10 @@ import Footer from './components/Footer';
 import './app.css';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faQuestion, faIdCard, faProjectDiagram, faBars, faChevronCircleDown, faGlobe, faThLarge, faThList, faSlidersH } from '@fortawesome/free-solid-svg-icons';
+import { faQuestion, faIdCard, faProjectDiagram, faBars, faChevronCircleDown, faGlobe, faThLarge, faThList, faSlidersH, faCog, faExclamationTriangle } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedinIn, faGithub, faFreeCodeCamp, faHtml5, faReact, faCss3Alt, faJsSquare, faAngular, faCodepen } from '@fortawesome/free-brands-svg-icons';
 
-library.add(faQuestion, faIdCard, faProjectDiagram, faBars, faChevronCircleDown, faGlobe, faThLarge, faThList, faSlidersH, faLinkedinIn, faGithub, faFreeCodeCamp, faHtml5, faReact, faCss3Alt, faJsSquare, faAngular, faCodepen);
+library.add(faQuestion, faIdCard, faProjectDiagram, faBars, faChevronCircleDown, faGlobe, faThLarge, faThList, faSlidersH, faCog, faExclamationTriangle, faLinkedinIn, faGithub, faFreeCodeCamp, faHtml5, faReact, faCss3Alt, faJsSquare, faAngular, faCodepen);
 
 class App extends Component {
 	constructor() {
