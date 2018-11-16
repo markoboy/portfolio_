@@ -181,5 +181,6 @@
 		left: 20%;
 		bottom: 40%;
 		border-color: transparent transparent transparent white;
+		transition: none; /* Fix for line-through when transitioning */
 	}
 }
