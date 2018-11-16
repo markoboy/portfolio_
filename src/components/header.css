@@ -100,7 +100,7 @@
 }
 
 /* Medium screen styles */
-@media screen and (max-width: 815px) {
+@media screen and (max-width: 720px) {
 	.header.open {
 		z-index: 20;
 	}
